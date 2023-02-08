@@ -1,0 +1,146 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+/* font-family: 'Epilogue', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+header .nav-left{
+    display: flex;
+    align-items: center;
+}
+header .nav-left .logo{
+    padding-right: 20px;
+}
+header .nav-left .nav{
+    display: flex;
+}
+header .nav-left .nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--Medium-Gray);
+}
+header .nav-right a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+}
+header .nav-right button{
+    margin-left: 30px;
+    padding: 10px 15px;
+    border: 1px solid var(--Almost-Black);
+    background-color: var(--Almost-White);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flex-box{
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid black; */
+}
+.flex-box .flex-left{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid black; */
+}
+.flex-box .flex-right{
+    flex: 0.5;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.make-remote{
+    padding: 30px;
+    /* border: 1px solid black; */
+    height: 70%;
+    flex: 0.7;
+    margin-top: 50px;
+}
+.make-remote button{
+    margin: 40px 0;
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.make-remote button:hover{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid var(--Almost-Black);
+}
+.make-remote p{
+    color: var(--Medium-Gray);
+    line-height: 20px;
+}
+.flex-box .flex-left .clients{
+    padding-left: 30px;
+    flex: 0.3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.arrow-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
