@@ -51,9 +51,15 @@ header .nav-left .nav a{
     text-decoration: none;
     color: var(--Medium-Gray);
 }
+header .nav-left .nav a:hover{
+    color: var(--Almost-Black);
+}
 header .nav-right a{
     text-decoration: none;
     color: var(--Medium-Gray);
+}
+header .nav-right a:hover{
+    color: var(--Almost-Black);
 }
 header .nav-right button{
     margin-left: 30px;
@@ -62,6 +68,9 @@ header .nav-right button{
     background-color: var(--Almost-White);
     border-radius: 10px;
     cursor: pointer;
+}
+header .nav-right button:hover{
+    color: var(--Almost-Black);
 }
 main{
     max-width: 900px;
@@ -162,32 +171,87 @@ h1{
     flex-direction: column;
     gap: 15px;
 }
-
 .opacity-none{
     opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mobile-header{
+    display: none;
+}
 
 
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 768px){
+
+    .flex-box{
+        width: 100%;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 300px;
+        grid-template-areas: 
+        "flex-right"
+        "flex-left";
+    }
+    .flex-right img{
+        width: 100%;
+    }
+
+    .flex-right{
+        grid-area: flex-right;
+    }
+    .flex-left{
+        grid-area: flex-left;
+    }
+    header{
+        display: none;
+    }
+    br{
+        display: none;
+    }
+    .flex-left .make-remote{
+        text-align: center;
+    }
+    .features-dropdown, .company-dropdown{
+        display: none;
+    }
+    .flex-box .flex-left .make-remote{
+        padding: 0px;
+        /* border: 1px solid black; */
+        height: 100%;
+        flex: 0;
+        margin-top: 0;
+    }
+    .flex-box .flex-left .clients{
+        padding-left: 0px;
+        flex: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .flex-box .flex-left .make-remote p {
+        padding: 10px;
+    }
+    .flex-box .flex-left .make-remote h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .make-remote button{
+        margin: 20px 0 40px 0px;
+    }
+    .mobile-header{
+        display: block;
+        display: flex;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    .mobile-header .menu-icon ion-icon{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
