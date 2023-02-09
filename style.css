@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
+    /* outline: 1px blue solid; */
+    /* background: rgb(0 100 0 / 0.1) !important; */
+
 }
 
 :root{
@@ -21,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--Almost-White);
 }
 header {
     display: flex;
@@ -39,6 +43,9 @@ header .nav-left .logo{
 header .nav-left .nav{
     display: flex;
 }
+header .nav-left .nav .arrow-div img{
+    cursor: pointer;
+}
 header .nav-left .nav a{
     margin-left: 20px;
     text-decoration: none;
@@ -56,7 +63,10 @@ header .nav-right button{
     border-radius: 10px;
     cursor: pointer;
 }
-
+main{
+    max-width: 900px;
+    margin: 0 auto;
+}
 .flex-box{
     display: flex;
     gap: 50px;
@@ -82,7 +92,7 @@ h1{
     /* border: 1px solid black; */
     height: 70%;
     flex: 0.7;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 .make-remote button{
     margin: 40px 0;
@@ -92,6 +102,7 @@ h1{
     color: var(--Almost-White);
     border-radius: 10px;
     cursor: pointer;
+    font-size: 14px;
 }
 .make-remote button:hover{
     background-color: var(--Almost-White);
@@ -114,11 +125,47 @@ h1{
     align-items: center;
     gap: 5px;
 }
+.features-dropdown .dropdown{
+    gap: 5px;
+    display: flex;
+    line-height: 30px;
+    color: var(--Medium-Gray);
+    font-size: 14px;
+}
+.features-dropdown{
+    background-color: white;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    width: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 330px;
+    transition: all 0.2s ease-in-out;
+}
+.company-dropdown{
+    background-color: white;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 530px;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform: tr;
+}
+.company-dropdown .dropdown{
+    font-size: 14px;
+    color: var(--Medium-Gray);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-
-
-
-
+.opacity-none{
+    opacity: 0;
+}
 
 
 
