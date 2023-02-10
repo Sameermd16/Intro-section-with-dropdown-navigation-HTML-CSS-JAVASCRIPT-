@@ -180,7 +180,6 @@ h1{
 
 
 
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -207,8 +206,26 @@ h1{
     .flex-left{
         grid-area: flex-left;
     }
-    header{
-        display: none;
+    .main-header{
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        background-color: var(--Almost-White);
+        flex-direction: column;
+    }
+    .main-header .nav-left{
+        flex-direction: column;
+        flex: 0;
+    }
+    .main-header .nav-left .nav{
+        flex-direction: column;
+    }
+    .main-header .nav-right{
+        flex-direction: column;
+        display: flex;
+        border: 1px solid black;
+        flex: 0;
     }
     br{
         display: none;
@@ -253,5 +270,8 @@ h1{
         width: 50px;
         height: 50px;
         cursor: pointer;
+    }
+    .logo{
+        display: none;
     }
 }
