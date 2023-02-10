@@ -207,7 +207,7 @@ h1{
         grid-area: flex-left;
     }
     .main-header{
-        width: 200px;
+        width: 70%;
         height: 100vh;
         position: absolute;
         right: 0;
