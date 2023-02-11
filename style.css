@@ -207,26 +207,9 @@ h1{
         grid-area: flex-left;
     }
     .main-header{
-        width: 70%;
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        background-color: var(--Almost-White);
-        flex-direction: column;
+        display: none;
     }
-    .main-header .nav-left{
-        flex-direction: column;
-        flex: 0;
-    }
-    .main-header .nav-left .nav{
-        flex-direction: column;
-    }
-    .main-header .nav-right{
-        flex-direction: column;
-        display: flex;
-        border: 1px solid black;
-        flex: 0;
-    }
+    
     br{
         display: none;
     }
@@ -244,11 +227,14 @@ h1{
         margin-top: 0;
     }
     .flex-box .flex-left .clients{
-        padding-left: 0px;
+        padding: 10px;
         flex: 0;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+    }
+    .clients img{
+        width: 70px;
     }
     .flex-box .flex-left .make-remote p {
         padding: 10px;
@@ -261,17 +247,82 @@ h1{
         margin: 20px 0 40px 0px;
     }
     .mobile-header{
-        display: block;
         display: flex;
         padding: 10px;
         padding-bottom: 0;
     }
-    .mobile-header .menu-icon ion-icon{
-        width: 50px;
-        height: 50px;
+    
+    .menu-icon, .mobile-logo{
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .mobile-nav{
+        height: 100vh;
+        background-color: var(--Almost-White);
+        width: 66%;
+        /* z-index: -1; */
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .mobile-nav .menu-close-div{
+        text-align: right;
+        cursor: pointer;
+        padding: 20px;
+    }
+    /* .mobile-nav{
+        border: 1px solid black;
+    } */
+    .dropbtn img{
+        margin-left: 10px;
+    }
+    .dropdown-content{
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+        /* border: 1px solid black; */
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        display: none;
         cursor: pointer;
     }
-    .logo{
-        display: none;
+    
+    .nav-content{
+        /* border: 1px solid black; */
+        padding: 20px;
+    }
+    .nav-content a{
+        text-decoration: none;
+        margin-bottom: 20px;
+        color: var(--Medium-Gray);
+        display: flex;
+        align-items: center;
+    }
+    a img{
+        margin-right: 5px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .login-btn a{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+    }
+    .register-btn button{
+        color: var(--Medium-Gray);
+        border: 1px solid var(--Almost-Black);
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 14px;
+        background-color: transparent;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
     }
 }
